@@ -1,0 +1,52 @@
+﻿<Window x:Class="PROG7213_ST10083209_POE_Part_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG7213_ST10083209_POE_Part_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,-606">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF17C378" Offset="0.677"/>
+                <GradientStop Color="#FF43FDF0" Offset="0.023"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="callNumbersListBox" HorizontalAlignment="Left" Height="219" Margin="63,193,0,0" VerticalAlignment="Top" Width="158"/>
+
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="20" Margin="26,965,0,0" VerticalAlignment="Top" Width="764"/>
+
+        <Label x:Name="label" Content="Librarian's Learn" HorizontalAlignment="Left" Margin="276,45,0,0" VerticalAlignment="Top" Width="286" FontFamily="Ink Free" FontSize="36" RenderTransformOrigin="0.52,0.547" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Click on an Area to learn more about it:" HorizontalAlignment="Left" Margin="284,105,0,0" VerticalAlignment="Top" FontFamily="Arial Black"/>
+
+        <Button x:Name="GenerateCallNumbersButton_Click" Content="Generate Call Numbers" HorizontalAlignment="Left" Margin="254,340,0,0" VerticalAlignment="Top" Width="146" Click="GenerateCallNumbers_Click" Background="#FFEA87A7"/>
+        <Button x:Name="OrderInAscendingButton_Click" Content="Order in Ascending" HorizontalAlignment="Right" Margin="0,375,400,0" VerticalAlignment="Top" Width="146" Click="OrderInAscendingButton_Click" Background="#FFB5A9E4"/>
+        <Button x:Name="button" Content="REPLACING BOOKS" HorizontalAlignment="Left" Margin="76,136,0,0" VerticalAlignment="Top" Background="#FF8BE074" Height="40" Width="132"/>
+
+
+
+        <Button x:Name="IdentifyingAreasButton" Content="Identify Areas" HorizontalAlignment="Left" Margin="76,494,0,0" VerticalAlignment="Top" Click="IdentifyingAreasButton_Click_1" Height="42" Width="132"/>
+        <ComboBox x:Name="CallNumberOrDescriptionComboBox" HorizontalAlignment="Left" Margin="168,879,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="CorrectAnswerLabel" Content="" HorizontalAlignment="Left" Margin="520,757,0,0" VerticalAlignment="Top" Background="#FFEDE983" Width="106"/>
+        <Label x:Name="ResultPercentageLabel" Content="" HorizontalAlignment="Left" Margin="520,640,0,0" VerticalAlignment="Top" Background="#FF90E27F" Width="106"/>
+
+        <Label x:Name="ResultLabel" Content="" HorizontalAlignment="Left" Margin="520,686,0,0" VerticalAlignment="Top" Width="106" Background="#FF77E651"/>
+        <Label x:Name="CallNumberLabel" Content="" HorizontalAlignment="Left" Margin="93,625,0,0" VerticalAlignment="Top" Background="#FF706DCC" Width="98" Height="158"/>
+        <Button x:Name="GenerateCallNumbers2Button_Click" Content="Generate Call Numbers" HorizontalAlignment="Left" Margin="79,578,0,0" VerticalAlignment="Top" Click="GenerateCallNumbers2_Click"/>
+        <Label x:Name="CallNumbersLabel" Content="" HorizontalAlignment="Left" Margin="254,502,0,0" VerticalAlignment="Top" Width="276" Background="#FFE280D5"/>
+        <Label x:Name="DescriptionLabel" Content="" HorizontalAlignment="Left" Margin="254,625,0,0" VerticalAlignment="Top" Background="#FF6E6AEF" Height="158" Width="98"/>
+        <Label x:Name="CallNumberOrDescriptionLabel" Content="" HorizontalAlignment="Left" Margin="142,831,0,0" VerticalAlignment="Top" Width="195" Background="#FFF39F9F"/>
+
+
+    </Grid>
+</Window>
